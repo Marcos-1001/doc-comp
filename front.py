@@ -13,7 +13,7 @@ bedrock_runtime =  boto3.client(
                             )   
 
 def converting_pdf(doc1, doc2, user):
-    embedding.truncate_the_tables()
+    embedding.truncate_the_tables(user)
     # save as pdf 
     with open(os.path.join(folder_path, 'pdfs', f'doc1-{user}.pdf'), 'wb') as f:
         f.write(doc1.getbuffer())
