@@ -15,26 +15,26 @@ bedrock_runtime =  boto3.client(
 def converting_pdf(doc1, doc2, user):
     embedding.truncate_the_tables()
     # save as pdf 
-    with open(os.path.join(folder_path, 'pdfs', 'doc1.pdf'), 'wb') as f:
+    with open(os.path.join(folder_path, 'pdfs', f'doc1-{user}.pdf'), 'wb') as f:
         f.write(doc1.getbuffer())
-    with open(os.path.join(folder_path, 'pdfs', 'doc2.pdf'), 'wb') as f:
+    with open(os.path.join(folder_path, 'pdfs', f'doc2-{user}.pdf'), 'wb') as f:
         f.write(doc2.getbuffer())
     st.write('Documentos cargados')
 
     # open the pdfs
     with st.spinner('Convirtiendo los documentos a texto...'):
         for i in range(1, 3):
-            pdf_path = os.path.join(folder_path, 'pdfs', f'doc{i}.pdf')
-            save_path = os.path.join(folder_path, 'jsons', f'doc{i}.json')
+            pdf_path = os.path.join(folder_path, 'pdfs', f'doc{i}-{user}.pdf')
+            save_path = os.path.join(folder_path, 'jsons', f'doc{i}-{user}.json')
             doc = pymupdf.open(pdf_path)
             parsing_pdf.from_pdf_to_dictionary(doc, output_path=save_path)
     
     with st.spinner('Procesando los documentos...'):
-        parsing_pdf.big2small(os.path.join(folder_path, 'jsons', "doc1.json"))
-        parsing_pdf.big2small(os.path.join(folder_path, 'jsons', "doc2.json"))
+        parsing_pdf.big2small(os.path.join(folder_path, 'jsons', f"doc1-{user}.json"))
+        parsing_pdf.big2small(os.path.join(folder_path, 'jsons', f"doc2-{user}.json"))
     
     with st.spinner('Creando la base de datos...'):
-        embedding.for_making_a_db(bedrock_runtime, document_1 = "doc1", document_2 = "doc2", user = user)
+        embedding.for_making_a_db(bedrock_runtime, document_1 = f"doc1-{user}", document_2 = f"doc2-{user}", user = user)
     
 
 

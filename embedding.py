@@ -49,7 +49,8 @@ def info_sections(retrieved_sections : list, document_1 : str = "tdr_v4"):
         stack = [section]
 
         while len(stack) > 0:
-            section = stack.pop()
+            section = stack[-1]
+            stack.pop()
 
 
             if section in visited_sections:
@@ -66,10 +67,10 @@ def info_sections(retrieved_sections : list, document_1 : str = "tdr_v4"):
                 for child in children:
                     if child not in visited_sections:
                         stack.append(child)
-               
-    """print("-------------------------------------")            
-    print(f"Secciones mandadas al LLM:  {visited_sections.keys()}")
-    print("-------------------------------------")"""
+    
+    print("-------------------------------------")            
+    print(f"Secciones mandadas al LLM:  {[section[0] for section in sections_content]}")
+    print("-------------------------------------")
     
 
     return sections_content

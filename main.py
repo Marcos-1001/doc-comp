@@ -100,8 +100,8 @@ def query_function(bedrock : boto3.client,
     print("----------------------------------------------")
     print("Secciones encontradas: ", retrieved_sections)
     print("----------------------------------------------")
-    content_sections_1 = info_sections(retrieved_sections, document_1="tdr_v4")
-    content_sections_2 = info_sections(retrieved_sections, document_1="tdr_v6")
+    content_sections_1 = info_sections(retrieved_sections, document_1=f"doc1-{user}")
+    content_sections_2 = info_sections(retrieved_sections, document_1=f"doc2-{user}")
 
     async_func = call_claude_async
     if 'COMPARAR' in response:     
@@ -109,7 +109,7 @@ def query_function(bedrock : boto3.client,
 
 
     result = [""] * len(content_sections_1)
-
+    
     # Use ThreadPoolExecutor to parallelize the calls to the model
     with concurrent.futures.ThreadPoolExecutor() as executor:
         # Create a list of futures
@@ -187,8 +187,11 @@ def main():
         chrono = time.time()
         
         print(f"Query: {query}")
-        print(query_function(bedrock_runtime, query))
-
+        text = query_function(bedrock_runtime, query)
+        # Write the response to a file
+        with open("response.txt", "w") as file:
+            file.write(text)
+        
         time_query = time.time() - chrono
         min_time = min(min_time, time_query)
         max_time = max(max_time, time_query)
@@ -210,7 +213,7 @@ def main():
                          "Dame información sobre los servicios de gestion de identidad y acceso")) 
     print("----------------------------------------------")
     print(query_function(bedrock_runtime, 
-                         "Dentro de las caracteristicas de la nube, es obligatoria la certificacion ISO 27020?"))
+                         "Cuales son las diferencias entre los documentos para la subseccion soporte?")) 
     print("----------------------------------------------")
     print(query_function(bedrock_runtime, 
                          "Es cierto que el postor debe acreditar 30000 soles como el monto facturado acumulado?"))
@@ -229,23 +232,34 @@ def main():
     """
     print(query_function(bedrock_runtime, 
                          "Cuales son las diferencias entre ambos documentos para redis?"))
+    print(time.time()-time_set)
     print("----------------------------------------------")
+    time_set = time.time()
     print(query_function(bedrock_runtime, 
                          "Cuales son las diferencias entre ambos documentos para personal clave?"))                  
+    print(time.time()-time_set)
     print("----------------------------------------------")
+    time_set = time.time()
     print(query_function(bedrock_runtime, 
                          "Cuanto es el monto minimo facturado para participar de la licitacion en el primer documento?"))                  
+    print(time.time()-time_set)
     print("----------------------------------------------")
+    time_set = time.time()
     print(query_function(bedrock_runtime, 
                          "Cual es la certificación que trata sobre la calidad?"))      
+    print(time.time()-time_set)
     print("----------------------------------------------")
+    time_set = time.time()
     print(query_function(bedrock_runtime, 
                          "Cuales son las diferencias entre ambos documentos para la forma de pago?"))      
+    print(time.time()-time_set)
     print("----------------------------------------------")
+    time_set = time.time()
     print(query_function(bedrock_runtime, 
                          "Cuáles son las diferencias entre las características y condiciones del servicio a contratar para los 2 documentos?"))
     
     print("----------------------------------------------")
+    time_set = time.time()
     print(query_function(bedrock_runtime, 
                          "Nosotros como desarrolladores, cuáles son los principales cambios que debemos tener en cuenta en el segundo documento?"))
     """
