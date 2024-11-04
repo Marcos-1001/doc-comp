@@ -1,0 +1,51 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+3. Análisis Inteligente de Amenazas: El servicio deberá utilizar un motor de inteligencia
+artificial para el análisis y defensa contra amenazas, proporcionando una capa adicional
+de seguridad inteligente.
+4. Protección de Aplicaciones Web: El servicio deberá incluir un Firewall de Aplicaciones
+Web (WAF) integrado para proteger contra amenazas a nivel de aplicación, como
+ataques XSS y CSRF.
+5. Auditoria de Logs: El servicio deberá registrar logs detallados de eventos de ataque,
+control de acceso y tráfico, facilitando la auditoría y el análisis de seguridad.
+6. Captura de Paquetes de Red: El servicio deberá incluir una herramienta para la captura
+y análisis de paquetes, ayudando en la localización de fallos de red y en el análisis de
+ataques.
+7. Control de Acceso Basado en ACL: El servicio deberá implementar políticas de acceso
+basadas en listas negras y blancas, permitiendo un control detallado del acceso a la
+red.
+8. Protección Anti-Crawler: El servicio deberá incluir análisis dinámico del comportamiento
+de los bots y protección contra rastreadores web no autorizados.
+9. Protección de Contenedores: El servicio deberá ser capaz de detectar vulnerabilidades
+en imágenes de contenedores y proteger contra escapes de contenedores.
+10.Protección de Integridad de Archivos: El servicio deberá monitorizar archivos criticos
+V°B°
+del sistema y alertar sobre modificaciones no autorizadas.
+W. BAUTISTA R
+11. Defensa contra Shell Reversa: El servicio deberá prevenir ataques de shell reversa,
+protegiendo contra intentos de acceso no autorizados.
+12. Integración con Servicios de Log y Monitoreo: El servicio deberá integrarse con
+servicios para la recolección y análisis de logs en tiempo real.
+13. Configuración de Alertas: El servicio deberá permitir la configuración de notificaciones
+para logs de ataques y advertencias de tráfico, proporcionando alertas por correo
+electrónico o SMS.
+14. Políticas de Seguridad Automatizadas: El servicio deberá facilitar la importación y
+aplicación automatizada de políticas de seguridad, mejorando la eficiencia de gestión.
+15. Protección en el Borde de la Red: El servicio deberá ofrecer protección de tráfico en
+el borde de la red y entre VPCs, asegurando la integridad y seguridad de los datos en
+tránsito.
+16. Registro de Eventos: El servicio deberá registrar logs detallados de eventos de ataque,
+control de acceso y tráfico.
+17. Compatibilidad con IPv6: El servicio deberá garantizar que puede manejar y proteger
+el tráfico que utiliza el protocolo IPv6.
+18. Protección contra Fugas de Información: El servicio deberá detectar y prevenir la
+divulgación de información sensible.
+19. Control de Acceso por Geolocalización: El servicio deberá incluir reglas
+personalizadas para controlar el acceso basado en la ubicación geográfica de las
+direcciones IP.
+20. Protección contra Manipulación de Páginas Web: El servicio deberá ofrecer

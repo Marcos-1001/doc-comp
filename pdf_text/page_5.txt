@@ -1,0 +1,52 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+Características y Especificaciones:
+1. Capacidad de Protección Adicional (EIP Protection Capacity):
+Protección para 15 EIPs: El servicio debe incluir la capacidad de proteger al menos 15
+direcciones IP elásticas (EIP), garantizando la protección de las instancias críticas
+expuestas a Internet.
+2. Tráfico de Protección Máxima (Peak Protection Traffic):
+50 Mbit/s de Tráfico Máximo de Protección en Internet: El firewall debe ser capaz de
+gestionar y proteger un tráfico de hasta 50 Mbit/s en su pico, asegurando la continuidad
+operativa y la seguridad de los servicios públicos durante periodos de alto tráfico.
+3. Protección Integral contra Amenazas:
+Detección y Mitigación de Amenazas Avanzadas: Detección y mitigación de ataques
+DDoS, inyecciones SQL, troyanos, gusanos, spyware y ataques de phishing.
+Proporciona un sistema de prevención de intrusiones (IPS) que incluye un motor de
+inteligencia artificial para la detección en tiempo real.
+REDES
+4. Gestión y Monitorización Centralizada:
+Consola de Administración: Ofrece herramientas de gestión centralizada que incluyen
+dashboards en tiempo real, reportes detallados sobre incidentes y rendimiento, y
+estadísticas de tráfico.
+5. Actualizaciones Automáticas:
+SALUDPOL
+Actualización y Parcheo de Seguridad: Implementa parches de seguridad y
+V°B°
+actualizaciones automáticas para mantener el firewall siempre actualizado contra las
+W.
+BAUTISTA P.
+últimas amenazas conocidas.
+6. Alta Disponibilidad y Resiliencia:
+Despliegue en Clúster: Los motores y componentes del firewall están desplegados en
+configuraciones redundantes para asegurar la continuidad del servicio en caso de
+fallos.
+7. Facilidad de Integración:
+Compatibilidad con Otros Servicios Cloud: El firewall debe ser compatible con otros
+servicios en la nube, facilitando su integración en un entorno híbrido o multi-cloud.
+8. Escalabilidad:
+Escalabilidad Automática: Permite la escalabilidad automática para adaptarse a
+cambios en la demanda de tráfico y recursos, sin afectar el rendimiento o la seguridad.
+9. Filtrado de Paquetes y Control de Acceso:
+Reglas de Filtrado Personalizadas: Control del tráfico basado en IPs, puertos y
+protocolos. Incluye control de acceso basado en el 5-tuple (dirección IP de origen,
+puerto de origen, dirección IP de destino, puerto de destino y protocolo).
+10. Protección de Aplicaciones Web (WAF):
+Firewall de Aplicaciones Web: Proporciona protección contra amenazas a nivel de
+aplicación, como ataques XSS y CSRF, asegurando la seguridad de las aplicaciones
+web.

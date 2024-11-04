@@ -1,0 +1,47 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Peru SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+atacantes ejecutar comandos no autorizados en la base de datos.
+Autenticación Rota: Protección contra debilidades en los mecanismos de autenticación
+que podrían ser explotadas para obtener acceso no autorizado.
+Exposición de Datos Sensibles: Prevención de la exposición de datos sensibles a través
+de protección de datos en tránsito y en reposo.
+Entidades Externas XML (XXE): Bloqueo de ataques que exploten vulnerabilidades en el
+procesamiento de XML.
+Control de Acceso Roto: Implementación de controles estrictos para evitar el acceso no
+autorizado a recursos restringidos.
+Configuración de Seguridad Incorrecta: Garantía de configuraciones seguras por defecto
+y capacidad para monitorear y corregir configuraciones inseguras.
+Cross-Site Scripting (XSS): Prevención de ataques XSS que inyecten scripts maliciosos
+en las páginas web.
+Deserialización Insegura: Protección contra la deserialización de datos no confiables que
+podrían llevar a la ejecución remota de código.
+Uso de Componentes con Vulnerabilidades Conocidas: Detección y mitigación de
+DE
+riesgos asociados con el uso de bibliotecas y componentes con vulnerabilidades
+conocidas.
+Registro y Monitoreo Insuficientes: Provisión de capacidades avanzadas de monitoreo y
+registro para la detección y respuesta a incidentes de seguridad.
+8. Monitorización en Tiempo Real:
+BAUTISTA P.
+Alertas y Notificaciones: Ofrece alertas en tiempo real para actividades sospechosas
+o incidentes de seguridad, permitiendo una respuesta rápida y eficaz.
+9. Auditoría de Logs:
+Registro de Eventos: Registra logs detallados de eventos de ataque, control de
+acceso y tráfico, facilitando la auditoría y el análisis de seguridad.
+10. Captura de Paquetes de Red:
+Análisis de Paquetes: Herramienta para la captura y análisis de paquetes, ayudando
+en la localización de fallos de red y en el análisis de ataques.
+11. Protección en el Borde de la Red:
+Seguridad en el Borde: Ofrece protección de tráfico en et borde de la red y entre VPCs,
+asegurando la integridad y seguridad de los datos en tránsito,
+12. Integración con Servicios de Log y Monitoreo:
+Servicio de Logs y Monitoreo: Integración con servicios para la recolección y análisis
+de logs en tiempo real.
+13. Defensa de Directorios Sensibles:
+Protección de Directorios. Defensa contra escaneos de directorios sensibles en los
+servidores, asegurando la privacidad y seguridad de los datos.

@@ -1,0 +1,54 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú N SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+especificaciones mínimas, tomando como referencia un servicio de WAF en la nube
+avanzado.
+Características y Especificaciones:
+1. Capacidad de Protección:
+Número de Dominios Protegidos: Capacidad para proteger al menos 60 dominios.
+Número de Reglas de Protección: Soporte para al menos 20 reglas de protección
+configurables.
+Capacidad de Manejo de Solicitudes: Capacidad para manejar hasta 200 millones de
+solicitudes mensuales.
+Detalles Técnicos Principales:
+V°B
+1. Protección Integral contra Amenazas:
+MEDES
+Detección y Mitigación de Amenazas Avanzadas: Protección contra inyecciones
+SQL, cross-site scripting (XSS), cargas de shells web, inyecciones de
+comandos/código, inclusión de archivos, acceso a archivos sensibles y explotación de
+vulnerabilidades de terceros.
+Prevención de Ataques DDoS y CC: Identificación de usuarios reales, configuración
+de limitación de tasas y bloqueo de usuarios falsos para mitigar ataques de denegación
+de servicio Challenge Collapsar (CC).
+SALUDPOL
+2. Gestión y Monitorización Centralizada:
+V°B°
+Consola de Administración: Herramientas de gestión centralizada que incluyen
+W. BAUTISTA P.
+dashboards en tiempo real, reportes detallados sobre incidentes y rendimiento,
+y
+estadisticas de tráfico.
+3. Actualizaciones Automáticas:
+Actualización y Parcheo de Seguridad: Implementación de parches de seguridad y
+actualizaciones automáticas para mantener el WAF siempre actualizado contra las
+últimas amenazas conocidas.
+4. Alta Disponibilidad y Resiliencia:
+Despliegue en Clúster: Los motores y componentes del WAF están desplegados en
+configuraciones redundantes para asegurar la continuidad del servicio en caso de
+fallos.
+5. Facilidad de Integración:
+Compatibilidad con Otros Servicios Cloud: El WAF debe ser compatible con otros
+servicios en la nube, facilitando su integración en un entorno híbrido o multi-cloud.
+6. Escalabilidad:
+Escalabilidad Automática: Permite la escalabilidad automática para adaptarse a
+cambios en la demanda de tráfico y recursos, sin afectar el rendimiento o la seguridad.
+7. Protección de Aplicaciones Web:
+Cobertura de OWASP Top 10: El WAF debe ofrecer protección integral contra las
+principales amenazas de seguridad web identificadas por OWASP, incluyendo pero no
+limitado a:
+Inyección: Prevención de ataques de inyección, como inyección SQL, que permiten a los

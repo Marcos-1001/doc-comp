@@ -1,0 +1,90 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policía Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+16
+Servicio WAF PaaS o SaaS (Según TDR)
+1
+17
+Servicio de Network Firewall PaaS o SaaS (Según TDR)
+1
+18
+Servicio de Protección de servidores PaaS o SaaS o Agente (Según TDR)
+1
+19
+Servicio de Backup
+1
+20
+Servicio de monitoreo y alarmas de cpu, memoria y disco.
+1
+21
+lps públicas estáticas
+15
+22
+Servicio de vpn site - site
+15
+Servicio de vpn site client
+15
+23
+Servicio de Soporte del Contratista en modalidad 24x7. Este servicio
+1
+incluirá la devolución de la llamada para la atención de la incidencia.
+24
+Servicio de Soporte Business en modalidad 24x7. Este servicio deberá ser
+1
+exclusivo de la marca.
+*Para la instalación o migración de las distribuciones Linux se deberán realizar en coordinación con la entidad.
+III.5
+DEL MONITOREO
+El contratista deberá realizar el monitoreo de cada servidor considerando:
+Monitoreo 24x7: Servidor
+Uso de espacio en Disco
+Uso de Memoria RAM
+Uso de Procesamiento
+Así mismo, el contratista deberá de brindar un acceso web a SALUDPOL para visualizar el
+estado de los servidores y servicios.
+III.6
+DE LA CONECTIVIDAD
+El contratista deberá proporcionar una salida a Internet en su "Datacenter" o "Centro de
+Datos" con un ancho de banda de 40 Mbps o superior, con overbooking de 1:1.
+El servicio deberá contar con un firewall para filtrar todo el tráfico para evitar que archivos
+infectados, malware o virus entren en la red.
+SALUDPOL
+V°B
+III.7
+DEL RESPALDO DE INFORMACIÓN
+W.
+BAUTISTA P.
+El servicio de respaldo para las máquinas virtuales debe tener una disponibilidad minima
+del 99,9%
+El servicio de respaldo para las máquinas virtuales permite la copia de seguridad y
+restauración con un clic para el servicio de almacenamiento de bloques a través de la
+plataforma.
+El servicio deberá usar la solución nativa de respaldo que ofrece la plataforma. No deberá
+necesitar de la instalación de agentes en el ambiente virtual o máquinas virtuales para poder
+realizar las tareas de respaldo y recuperación.
+El contratista deberá garantizar la disponibilidad de la información alojada en los servidores,
+mediante una política de respaldo que contemple por lo menos:
+Respaldo a disco del total de GB de almacenamiento contratados.
+Deberá programarse un (01) respaldo completo (Full) y catorce (14) incrementales,
+con lo que se podrá acceder y recuperar información dentro de los últimos quince
+(15) días.
+Deberá programarse un (01) respaldo completo (Full) mensual el último día de cada
+mes, con lo que se podrá acceder y recuperar información dentro de los últimos dos
+(02) meses.
+III.8 DEL ACCESO REMOTO
+El contratista deberá brindar como parte del servicio:
+El servicio de acceso remoto al servidor via conexión directa y/o internet y/o vpn,
+con acceso de administrador o root sobre cada servidor.
+Cuentas estables durante la contratación del servicio.
+Soporte para conexiones sobre IPv4.
+III.9
+DE LOS SERVICIOS DE SEGURIDAD
+Deberá contar con:
+a. Network Firewall: El contratista deberá proporcionar un Network Firewall como servicio
+PaaS o SaaS del fabricante cloud. El servicio debe cumplir con las siguientes
+especificaciones mínimas, tomando como referencia un servicio de firewall en la nube
+avanzado.

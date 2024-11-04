@@ -1,0 +1,67 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policía Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+a la fecha de la presentación de ofertas que se computarán desde la fecha de la conformidad o emisión
+del comprobante de pago, según corresponda. En el caso de consorcios, todos los integrantes deben
+contar con la condición de micro y pequeña empresa.
+Se consideran servicios similares a los siguientes:
+Servicio de housing o servicio de procesamiento de datos de producción y/o de contingencia, o
+servicio de plataforma y/o infraestructura en la nube.
+Servicio de Data Center (Housing y/o Hosting)
+Servicio de Housing de infraestructura computacional
+Servicio de Operación y Administración del Centro de Cómputo Principal y Centro de Computo
+de Contingencia.
+Servicio de Cloud Hosting
+Servicio de Infraestructura en la Nube
+Servicio de alojamiento en nube privada de los sistemas de información
+Servicio de Gestión de TI en Nube
+Servicio de Ciberseguridad en Nube
+Servicio de administración o gestión en Nube
+Bigdata y Analitica en Nube (AWS, Huawei Cloud o Azure)
+Acreditación:
+La experiencia del postor en la especialidad se acreditará con copia simple de (i) contratos u órdenes de
+servicios, y su respectiva conformidad o constancia de prestación; o (ii) comprobantes de pago cuya
+V°B°
+cancelación se acredite documental y fehacientemente, con voucher de depósito, nota de abono, reporte
+REDES
+de estado de cuenta, cualquier otro documento emitido por Entidad del sistema financiero que acredite
+el abono o mediante cancelación en el mismo comprobante de pago¹, correspondientes a un máximo de
+veinte (20) contrataciones.
+En caso los postores presenten varios comprobantes de pago para acreditar una sola contratación, se
+debe acreditar que corresponden a dicha contratación; de lo contrario, se asumirá que los comprobantes
+acreditan contrataciones independientes, en cuyo caso sólo se considerará, para la evaluación, las
+SALUDPOL
+veinte (20) primeras contrataciones indicadas en el Anexo N° 8 referido a la Experiencia del Postor en
+la Especialidad
+V°B°
+W. BAUTISTAP.
+En el caso de servicios de ejecución periódica o continuada, sólo se considera como experiencia la parte
+del contrato que haya sido ejecutada durante los ocho (8) años anteriores a la fecha de presentación de
+ofertas, debiendo adjuntarse copia de las conformidades correspondientes a tal parte o los respectivos
+comprobantes de pago cancelados.
+En los casos que se acredite experiencia adquirida en consorcio, debe presentarse la promesa de
+consorcio o el contrato de consorcio del cual se desprenda fehacientemente el porcentaje de las
+obligaciones que se asumió en el contrato presentado; de lo contrario, no se computará la experiencia
+proveniente de dicho contrato.
+Asimismo, cuando se presenten contratos derivados de procesos de selección convocados antes del
+20.09.2012, la calificación se ceñirá al método descrito en la Directiva "Participación de Proveedores en
+Consorcio en las Contrataciones del Estado", debiendo presumirse que el porcentaje de las obligaciones
+equivale al porcentaje de participación de la promesa de consorcio o del contrato de consorcio. En caso
+que en dichos documentos no se consigne el porcentaje de participación se presumirá que las
+obligaciones se ejecutaron en partes iguales.
+Si el titular de la experiencia no es el postor, consignar si dicha experiencia corresponde a la matriz en
+caso que el postor sea sucursal, o fue transmitida por reorganización societaria, debiendo acompañar la
+documentación sustentatoria correspondiente.
+1 Cabe precisar que, de acuerdo con la Resolución N° 0065-2018-TCE-S1 del Tribunal de Contrataciones del Estado:
+el solo sello de cancelado en el comprobante, cuando ha sido colocado por el propio postor, no puede ser
+considerado como una acreditación que produzca fehaciencia en relación a que se encuentra cancelado. Admitir
+ello equivaldría a consideran como válida la sola declaración del postor afirmando que el comprobante de pago ha
+sido cancelado"
+(...)
+"Situación diferente se suscita ante el sello colocado por el cliente del postor [sea utilizando el término "cancelado"
+o "pagado"] supuesto en el cual si se contaría con la declaración de un tercero que brinde certeza, ante la cual
+debiera reconocerse la validez de la experiencia".

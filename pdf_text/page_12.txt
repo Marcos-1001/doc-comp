@@ -1,0 +1,58 @@
+PERU
+Ministerio del Interior
+Fando de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú - SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+Asistencia Técnica Especializada:
+Acceso a ingenieros y expertos técnicos del proveedor del servicio de nube que
+pueden proporcionar soluciones avanzadas y soporte detallado para resolver
+problemas complejos, incluidos aquellos relacionados con la infraestructura y la
+seguridad.
+Gestión Proactiva y Mantenimiento:
+Apoyo en la implementación de actualizaciones críticas, parches de seguridad y
+prácticas de mantenimiento proactivo para asegurar la continuidad del servicio y la
+integridad de la infraestructura. Esto incluye la supervisión y la recomendación de
+acciones preventivas para evitar futuros problemas.
+Consultoría en Mejores Prácticas:
+Orientación continua sobre las mejores prácticas en la gestión y optimización de los
+recursos en la nube, incluyendo asesoría para la mejora de la eficiencia operativa,
+el rendimiento y la seguridad del servicio.
+Informes y Auditorías Detalladas:
+Provisión de informes regulares y detallados sobre las actividades de soporte,
+incluyendo análisis de incidentes, resolución de problemas y recomendaciones para
+la prevención de futuros incidentes. También se debe incluir auditorías periódicas
+para asegurar el cumplimiento de los niveles de servicio acordados.
+El contratista deberá proporcionar evidencia de la activación de este soporte especializado
+al inicio del contrato y mantener dicha activación durante todo el periodo de vigencia del
+servicio. Este soporte es esencial para asegurar que los servicios gestionados en la nube
+pública cumplan con los más altos estándares de calidad, disponibilidad y seguridad.
+El soporte business deberá permitir reportar incidencias por un lado por parte del contratista
+como segundo nivel si se trata de una cuestión relacionada con la nube. Por otro lado
+SALUDPOL también puede reportar directamente lo que proporciona una mayor flexibilidad
+BAUTISTA P.
+3.12.2 SOPORTE TÉCNICO DEL CONTRATISTA
+El contratista deberá proporcionar soporte técnico integral y continuo para la gestión del
+servicio de cloud público, abarcando aspectos clave como la administración de recursos
+de cómputo, políticas de backup, networking, monitoreo y seguridad. El enfoque será la
+gestión completa de la nube, incluyendo la protección Anti-DDoS como uno de los
+componentes de seguridad.
+a. Disponibilidad del Soporte Técnico
+Soporte Remoto a Demanda: El soporte técnico debe estar disponible 24 horas al
+día, 7 días a la semana, para abordar cualquier problema o incidente relacionado
+con la infraestructura en la nube.
+Soporte Telefónico y por Correo Electrónico: Acceso a soporte a través de llamadas
+telefónicas y correos electrónicos para consultas urgentes y no urgentes.
+Sistema de Tickets: Una plataforma en linea para registrar y seguir el progreso de
+incidentes y solicitudes, accesible para el personal de SALUDPOL.
+b. Tipos de Atención y Servicios Cubiertos
+Gestión de Máquinas Virtuales (VMs)
+Creación y Configuración de VMs: Asistencia en la creación y configuración de
+máquinas virtuales, incluyendo la instalación de sistemas operativos estándar y la
+configuración inicial de recursos.
+Escalado de Recursos: Apoyo en la ampliación o reducción de recursos (CPU,
+memoria, almacenamiento) asignados a las VMs según las necesidades operativas.
+Snapshots y Clonación: Realización de snapshots para la recuperación de estado y
+clonación de VMs para entornos de desarrollo y pruebas.
+Políticas de Backup y Recuperación

@@ -1,0 +1,111 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policía Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+Durante toda la vigencia del servicio, el contratista deberá activar y mantener un servicio de
+soporte especializado proporcionado directamente por el proveedor del servicio de nube
+pública.
+III.4
+COMPONENTES DE LA SOLUCIÓN - REQUISITOS MÍNIMOS
+Los servicios a considerar descritos anteriormente serán usados al 100% de utilización al
+año, estos servicios deben ser como mínimo:
+Item
+Descripción
+Cantidad
+1
+Linux
+1
+-Procesador 8 vCPU
+-Memoria RAM 16GB
+-Disco duro 2000GB Nvme SSDs
+2
+Linux
+1
+-Procesador 8 vCPU
+-Memoria RAM 16GB
+-Disco duro 1200GB Nvme SSDs
+3
+Windows Server x64 2016 Standard
+1
+-Procesador 2 vCPU
+-Memoria RAM 4GB
+-Disco duro 50GB Nvme SSDs
+10°B
+SECURITY
+4
+Linux
+1
+REDE
+-Procesador 24v CPU
+-Memoria RAM 48GB
+TECHNOLOGIA
+-Disco duro 500GB Nvme SSDs
+5
+Windows Server 2016 x64 Std o superior
+1
+Procesador 02 vCPU
+- Memoria RAM 4GB
+- Disco duro 50GB Nvme SSDs
+SALUDPOL
+6
+Oracle Linux x64 7 o superior
+1
+Procesador 08 vCPU
+V°B°
+OFFICIAL W. BAUTISTAP DEPARTMENT
+- Memoria RAM 32GB
+- Disco duro 550GB Nvme SSDs
+7
+Linux
+1
+- Procesador 08 vCPU
+- Memoria RAM 16GB
+Disco duro 3200GB Nvme SSDs
+8
+Linux
+1
+Procesador 08 vCPU
+Memoria RAM 16GB
+Disco duro 500GB Nvme SSDs
+9
+Linux
+1
+- Procesador 08 vCPU
+Memoria RAM 16GB
+Disco duro 500GB Nvme SSDs
+10
+Linux
+1
+- Procesador 08 vCPU
+- Memoria RAM 16GB
+Disco duro 500GB Nvme SSDs
+11
+Linux
+1
+Procesador 04 vCPU
+- Memoria RAM 8GB
+- Disco duro 2000GB Nvme SSDs
+12
+Linux
+1
+Procesador 02 vCPU
+Memoria RAM 8GB
+- Disco duro 50GB Nvme SSDs
+13
+Linux
+1
+Procesador 08 vCPU
+Memoria RAM 16GB
+Disco duro 500GB Nvme SSDs
+14
+Linux
+1
+Procesador 16v CPUs
+Memoria RAM 32GB
+Disco duro 1000GB Nvme SSDs
+15
+Servicio de AntiDDos.
+1

@@ -1,0 +1,62 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú - SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+Coordinación y comunicación: Actuando como punto de contacto principal, el lider de proyecto
+coordinará y mantendrá una comunicación efectiva entre el proveedor de servicios de
+alojamiento y el cliente.
+Supervisión del proyecto: El lider de proyecto será responsable de supervisar todo el proceso
+de implementación, asegurándose de que se cumplan los plazos, se alcancen los objetivos y
+se resuelvan los problemas que puedan surgir durante el proceso.
+IMPLEMENTADOR:
+Configuración de servidores: El implementador será responsable de configurar los servidores
+según los requisitos del cliente, instalando el sistema operativo, configurando el software y
+optimizando el rendimiento.
+Migración de datos: El implementador deberá planificar y llevar a cabo la migración de los datos
+existentes al nuevo servicio de alojamiento de servidores, asegurándose de que se realice de
+manera segura y sin interrupciones.
+Pruebas y verificación: El implementador realizará pruebas exhaustivas para garantizar que el
+servicio de alojamiento de servidores funcione correctamente. Esto puede incluir pruebas de
+rendimiento, pruebas de carga, pruebas de seguridad, etc.
+Capacitación y documentación: El implementador proporcionará capacitación al personal del
+cliente en el uso y administración del servicio de alojamiento de servidores, y generará
+documentación técnica detallada para su referencia.
+REDES
+IV.5
+DE LAS PENALIDADES
+Se aplicará las penalidades según lo establecido en el Reglamento de la Ley de Contrataciones
+del Estado del artículo 162.
+Si el contratista incurre en retraso injustificado en la ejecución de las prestaciones objeto del
+contrato, La Entidad le aplica automáticamente una penalidad por mora por cada día de atraso,
+de acuerdo a la siguiente fórmula:
+SALUDPOL
+0.10 X monto vigente
+V°B°
+Penalidad Diaria =
+F X plazo vigente en días
+BAUTISTA P.
+Donde:
+F 0.25 para plazos mayores a sesenta (60) días o;
+F 0.40 para plazos menores o iguales a sesenta (60) días.
+El retraso se justifica a través de la solicitud de ampliación de plazo debidamente aprobado.
+Adicionalmente, se considera justificado el retraso y en consecuencia no se aplica penalidad,
+cuando El Contratista acredite, de modo objetivamente sustentado, que el mayor tiempo
+transcurrido no le resulta imputable. En este último caso la calificación del retraso como
+justificado por parte de La Entidad no da lugar al pago de gastos generales ni costos directos
+de ningún tipo, conforme el numeral 162.5 del articulo 162 del Reglamento de la Ley de
+Contrataciones del Estado.
+IV.6 OTRAS PENALIDADES
+Se aplicarán las penalidades según lo establecido en el Reglamento de la Ley de
+Contrataciones del Estado del artículo 163.
+Podrán aplicarse otras penalidades, siempre y cuando sean objetivas, razonables y
+congruentes con el objeto de la convocatoria, hasta por un monto máximo equivalente al diez
+por ciento (10%) del monto del servicio contratado.
+La Oficina de Tecnología de la Información, en base a la ejecución de actividades de control
+informará a la Oficina de Administración si el contratista contratado incurre en una penalidad,
+a fin de que se ejecute la penalidad correspondiente.
+Cuando se llegue a cubrir el monto máximo de la penalidad (10%), SALUDPOL podrá resolver
+el contrato por incumplimiento en caso lo decida.
+Las otras penalidades son las siguientes:

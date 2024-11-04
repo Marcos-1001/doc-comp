@@ -1,0 +1,47 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú - SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+11. Monitorización en Tiempo Real:
+Alertas y Notificaciones: Ofrece alertas en tiempo real para actividades sospechosas o
+incidentes de seguridad, permitiendo una respuesta rápida y eficaz.
+12. Auditoría de Logs:
+Registro de Eventos: Registra logs detallados de eventos de ataque, control de acceso
+y tráfico, facilitando la auditoría y el análisis de seguridad.
+13. Captura de Paquetes de Red:
+Análisis de Paquetes: Herramienta para la captura y análisis de paquetes, ayudando
+en la localización de fallos de red y en el análisis de ataques.
+14. Protección en el Borde de la Red:
+Seguridad en el Borde: Ofrece protección de tráfico en el borde de la red y entre VPCs,
+asegurando la integridad y seguridad de los datos en tránsito.
+15. Integración con Servicios de Log y Monitoreo:
+Servicio de Logs y Monitoreo: Integración con servicios como Log Tank Service (LTS)
+y SecMaster para la recolección y análisis de logs en tiempo real.
+16. Defensa de Directorios Sensibles:
+Protección de Directorios: Defensa contra escaneos de directorios sensibles en los
+servidores, asegurando la privacidad y seguridad de los datos.
+SALUDPOL
+V°B°
+17. Defensa contra Shell Reversa:
+W. BAUTISTA P.
+Protección contra Shell Reversa: Prevención de ataques de shell reversa, protegiendo
+contra intentos de acceso no autorizados.
+18. Políticas de Seguridad Automatizadas:
+Implementación de Politicas: Facilita la importación y aplicación automatizada de
+políticas de seguridad, mejorando la eficiencia de gestión.
+19. Notificaciones de Alarma:
+Configuración de Alertas: Permite la configuración de notificaciones para logs de
+ataques y advertencias de tráfico, proporcionando alertas por correo electrónico o SMS.
+20. Análisis Inteligente de Amenazas:
+Motor de IA: Utiliza un motor de inteligencia artificial para el análisis y defensa contra
+amenazas, proporcionando una capa adicional de seguridad inteligente.
+21. Acceso Controlado por ACL:
+Listas de Control de Acceso (ACL): Implementación de politicas de acceso basadas en
+listas negras y blancas, permitiendo un control detallado del acceso a la red.
+b.
+Web Application Firewall: El contratista deberá proporcionar un Web Application Firewall
+(WAF) como servicio PaaS o SaaS del fabricante cloud, en el contexto de una
+implementación en el sector público en Perú. El servicio debe cumplir con las siguientes

@@ -1,0 +1,75 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+TÉRMINOS DE REFERENCIA
+CONTRATACIÓN DEL SERVICIO DE ALOJAMIENTO CLOUD PARA SERVIDORES DE SALUDPOL
+I.
+DENOMINACIÓN DE LA CONTRATACIÓN
+Contratación del servicio de alojamiento cloud para servidores de SALUDPOL.
+II.
+FINALIDAD PÚBLICA
+La contratación del servicio permitirá disponer de recursos de cómputo, almacenamiento, redes y
+seguridad de rápido aprovisionamiento, para la publicación y/o alojamiento de aplicaciones y servicios
+de TI, en ambientes de alta disponibilidad, confidencialidad y seguridad que permitan el normal
+desarrollo de las actividades diarias, contribuyendo con una Gestión Pública eficiente y de calidad que
+repercute en la atención oportuna de las necesidades de las áreas usuarias.
+III.
+REQUERIMIENTOS TÉCNICOS MÍNIMOS
+III.1
+CARACTERÍSTICAS GENERALES
+El contratista tiene la obligación de realizar el servicio de acuerdo a lo establecido en los
+Términos de Referencia, teniendo responsabilidad total sobre la ejecución del servicio
+contratado.
+El contratista será responsable de todo el despliegue y los elementos necesarios para
+realización de lo solicitado. Para la realización del servicio, SALUDPOL a través del
+responsable de la Oficina de Tecnologia de la Información brindará las facilidades y
+accesos necesarios.
+Cualquier omisión en las caracteristicas técnicas, no eximirá de responsabilidad al
+contratista, no podrá tomarse como base para reclamos, pues se entiende que el personal
+a cargo está técnicamente capacitado y especializado en la materia y que al realizar la
+propuesta técnica ha examinado cuidadosamente todos los documentos y se ha informado
+de todas las condiciones que puedan afectar sus servicios, costo y plazo de entrega.
+Las labores que involucren el corte de algún servicio en producción no podrán ser
+efectuados en horario de oficina para no interrumpir las labores del personal, en caso
+contrario, se realizarán en horario a coordinar con el responsable de la Oficina de
+Tecnologia de la Información.
+El contratista deberá contemplar como parte del servicio esquemas de continuidad, alta
+SALUDPOL
+disponibilidad y escalabilidad, así como la exclusividad de los recursos asignados al
+servicio.
+BAUTISTA P.
+El contratista deberá contemplar y asegurar como parte del servicio, altos niveles en la
+confidencialidad y privacidad de la información alojada, acorde a normativas y estándares
+vigentes.
+El contratista del servicio deberá contar con un Centro de Datos cual este implementado
+con los mecanismos y niveles de seguridad fisica y lógica necesarios para brindar un
+servicio de excelentes condiciones y adecuado nivel de disponibilidad, durante todo el
+periodo de la contratación del servicio.
+El contratista deberá de cumplir con los "Lineamientos para el Uso de Servicios en la Nube
+para entidades de la Administración Pública del Estado Peruano".
+El contratista brindará una disponibilidad mínima sobre el servicio cloud del 99.95% anual.
+El Centro de Datos deberá contar con al menos dos conexiones de salida internacional
+hacia internet, las cuales se deberán conmutar de manera automática.
+El contratista deberá mantener secreto profesional respecto de los datos a los que acceda
+en virtud del servicio ofertado, así como asegurar el respaldo de los mismos, obligaciones
+que subsistirán aún después de finalizar su relación con la persona contratante.
+El "Datacenter" o "Centro de Datos" del proveedor deberán contar como mínimo con
+certificaciones de disponibilidad TIER-III otorgada por el UpTime Institute ó RATED 3
+o'ISO/IEC 22237 ó 5-nines.
+El contratista deberá asegurar el que el Datacenter del servicio Cloud ofertado cumpla
+mínimamente con las siguientes certificaciones internacionales de seguridad y privacidad:
+ISO 27001, ISO 27017, ISO 27018, ISO 27701, CSA STAR, NIST Cybersecurity Framework
+(CSF).
+El contratista deberá contar con una mesa de ayuda con la capacidad de registrar incidentes
+por Teléfono, por correo electrónico o por sistema de ticket para reportar incidencias o
+requerimientos.
+III.2
+DISPONIBILIDAD Y BALANCEO DE CARGA DEL SERVICIO
+El contratista debe revisar y asegurar que los servicios de cómputo y memoria del servicio
+nube a ofertar tenga un SLA mínimo de 99.95%.
+El contratista debe revisar y asegurar que el servicio de nube ofertado permita balancear la
+carga de trabajo y distribuir un tipo específico de tráfico (http: o https: o ftp:) proveniente de

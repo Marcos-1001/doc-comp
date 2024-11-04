@@ -1,0 +1,50 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú - SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+14. Defensa contra Shell Reversa:
+Protección contra Shell Reversa: Prevención de ataques de shell reversa,
+protegiendo contra intentos de acceso no autorizados.
+15. Políticas de Seguridad Automatizadas:
+Implementación de Políticas: Facilita la importación y aplicación automatizada de
+políticas de seguridad, mejorando la eficiencia de gestión.
+16. Notificaciones de Alarma:
+Configuración de Alertas: Permite la configuración de notificaciones para logs de
+ataques y advertencias de tráfico, proporcionando alertas por correo electrónico o SMS.
+V°B
+REDES
+17. Análisis Inteligente de Amenazas:
+OK
+Motor de IA: Utiliza un motor de inteligencia artificial para el análisis y defensa contra
+amenazas, proporcionando una capa adicional de seguridad inteligente.
+18. Acceso Controlado por ACL:
+Listas de Control de Acceso (ACL): Implementación de políticas de acceso basadas
+en listas negras y blancas, permitiendo un control detallado del acceso a la red.
+19. Protección Anti-Crawler:
+Defensa contra Crawlers Maliciosos: Análisis dinámico del comportamiento de los
+bots y protección contra rastreadores web no autorizados.
+SALUDPOL
+V°B®
+20. Geolocalización y Control de Acceso:
+W. BAUTISTA P.
+Control de Acceso por Geolocalización: Reglas personalizadas para controlar el
+acceso basado en la ubicación geográfica de las direcciones IP.
+21. Protección contra Manipulación de Páginas Web:
+Anti-Defacement: Configuración de caché para páginas web estáticas con
+verificaciones aleatorias para detectar y prevenir la manipulación de contenido.
+22. Prevención de Fugas de Información:
+Protección contra Fugas de Información: Detección y prevención de la divulgación
+de información sensible como números de identificación, números de teléfono y
+direcciones de correo electrónico.
+23. Protección IPv6:
+Compatibilidad con IPv6: Garantiza que el WAF pueda manejar y proteger el tráfico
+que utiliza el protocolo IPv6.
+24. Protección Anti-Crawler:
+Defensa contra Crawlers Maliciosos: Identificación precisa del comportamiento de
+los bots y medidas de defensa basadas en sistemas de identificación de bots y control
+de riesgos.
+c. Servicio de protección de servidores: El contratista deberá proporcionar un servicio de
+protección contra amenazas y vulnerabilidades para todas las máquinas virtuales y

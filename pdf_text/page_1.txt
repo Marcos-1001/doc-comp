@@ -1,0 +1,77 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+internet entre los servidores de la solución, considerando que la aplicación si soporta un
+escenario de alta disponibilidad.
+III.3
+CARACTERÍSTICAS DE LA INFRAESTRUCTURA
+Debe contar con un portal de autoaprovisionamiento vía web compatible con diferentes
+navegadores por el cual la entidad accederá a los servicios requeridos. Este portal de auto-
+aprovisionamiento debe ser protegido por un mecanismo de doble autenticación, además
+de un usuario y contraseña.
+Debe contar con un servicio que permita gestionar el control de los accesos e identidades
+de los usuarios a la cuenta de nube otorgada. Permitirá a la entidad gestionar cuentas de
+usuario y autorizar permisos para los recursos de la nube.
+Debe contar con la provisión de servicios Infraestructura como servicio (laaS) y Plataforma
+como Servicio (PaaS) como mínimo.
+Debe contar un servicio de cómputo que permitirá desplegar ambientes virtuales con CPU
+y memoria. Asimismo, debe soportar el despliegue de Windows y de Linux.
+Debe permitir desplegar máquinas virtuales usando imágenes privadas con el propósito de
+reducir el servicio de despliegue.
+La plataforma debe permitir el uso de base de datos relacionales y no relacionales (noSQL)
+como servicio.
+Debe contar con un servicio de APIs de alto rendimiento para construir, gestionar y
+desplegar APIs, que deberá desplegarse desde el portal de la nube.
+Debe contar con un servicio de almacenamiento de bloques basado en arquitectura
+distribuida. Se deben operar estos servicios sin detener los servicios de la solución de nube.
+Puede utilizarse para sistemas de archivos, bases de datos, y otro software de sistema o
+aplicaciones que necesiten almacenamiento de bloques. Este servicio debe permitir
+REDES
+configurar almacenamiento en discos SATA y SSD (base de datos) desde el mismo portal
+de autoaprovisionamiento.
+Los discos admitirán el cifrado de datos para garantizar la seguridad de los datos.
+El servicio debe soportar la expansión de capacidad de los discos, sin detener las máquinas
+virtuales.
+Debe contar con un servicio de almacenamiento de objetos de tipo S3 o S3 compatible, con
+SALUDPOL
+una disponibilidad del 99.9% y durabilidad del 11 9's (99.999999999%) anual. Así mismo,
+este servicio debe contar con servicio de almacenamiento de modo frecuente, no frecuente
+V°B°
+y para archivado de información.
+W. BAUTISTA P.
+Debe contar con un servicio de alarmas. Estas alarmas podrán utilizarse para recopilar y
+seguir métricas, definir alarmas y reaccionar de modo automático ante los cambios en sus
+recursos. Estas alarmas revisarán el estado de los servicios de cómputo, almacenamiento,
+balanceo de carga. Estos servicios deberán estar disponibles desde el portal de
+autoaprovisionamiento y permitirán conocer el estado de funcionamiento y el rendimiento
+de los objetos monitorizados de cada servicio, en tiempo real.
+Debe permitir habilitar notificaciones al crear reglas de alarma. Cuando el estado del
+servicio en la nube cambia y los datos de monitoreo de la métrica alcanzan el umbral
+especificado en una regla de alarma, el servicio lo notificará mediante mensajes de texto,
+correos electrónicos o enviando mensajes a las direcciones del servidor. De esta manera,
+puede monitorear el estado de los recursos y los cambios en tiempo real.
+Debe contar con un servicio de compartición de archivos con alta confiabilidad (99.95%),
+alto rendimiento (IOPS: 4,000 hasta IOPS: 16,000), para las instancias virtuales que se
+creen en la plataforma de nube y debe desplegarse desde el portal de auto
+provisionamiento vía web.
+Debe incluir el aprovisionamiento de direcciones IP públicas a demanda desde el mismo
+portal de auto-provisionamiento, que permitirán la publicación de las aplicaciones por
+Internet.
+Debe contar con un servicio de VPN Site to Site para la conexión segura desde el datacenter
+de SALUDPOL al nodo de nube.
+La plataforma debe permitir crear, borrar o editar capacidades de procesamiento,
+almacenamiento, de red (ancho de banda) y sistemas operativos en una infraestructura a
+la que accede para su administración.
+La plataforma de nube debe permitir por lo menos 99,95% de disponibilidad mensual en los
+servicios de cómputo y memoria.
+La plataforma de nube a proponer debe tener una latencia promedio máxima de 60 ms
+desde el nodo a ofrecer hasta Perú.
+Debe contar servicios de seguridad de pago por uso como Anti-DDos y web application
+firewall, a configurarse desde el portal de auto-aprovisionamiento.
+Los centros de datos que se usan para alojar los nodos de la nube a considerar en este
+requerimiento deben contar con certificación de TIER 3 del Uptime Institute ó RATED 3
+o'ISO/IEC 22237 ó 5-nines como mínimo.

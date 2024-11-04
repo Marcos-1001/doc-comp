@@ -1,0 +1,65 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+configuración de caché para páginas web estáticas con verificaciones aleatorias para
+detectar y prevenir la manipulación de contenido.
+III.10 DEL SERVICIO DE DDoS
+El contratista del servicio de cloud público debe ofrecer una solución en modalidad PaaS o
+SaaS o nativa Anti-DDoS integrada que cumpla con los siguientes requisitos mínimos:
+Protección Básica: Provisión de protección contra ataques DDoS con un límite de
+hasta 5 Gbps de tráfico. La solución debe mitigar automáticamente los ataques
+detectados sin intervención manual.
+Detección y Mitigación: La solución debe incluir monitoreo continuo y análisis en
+tiempo real del tráfico para detectar y mitigar anomalías asociadas con ataques
+DDoS.
+Reportes y Alertas: Debe proporcionar notificaciones en tiempo real y reportes
+detallados después de un ataque, incluyendo la descripción del ataque y las medidas
+mitigatorias aplicadas.
+Configuración y Gestión: La solución debe ser fácil de configurar y gestionar a través
+de un panel de control centralizado que permita una gestión eficiente de las politicas
+de defensa.
+Escalabilidad: Capacidad de escalar automáticamente para manejar incrementos en
+el tráfico durante un ataque, con politicas de defensa que se puedan ajustar a las
+necesidades del cliente.
+Compatibilidad y Rendimiento: La solución debe ser compatible con múltiples
+protocolos de red y tener un impacto mínimo en el rendimiento de las aplicaciones
+protegidas.
+Soporte Técnico y Actualizaciones: Provisión de soporte técnico 24/7 y
+actualizaciones regulares para mantener la efectividad de la solución Anti-DDoS.
+III.11 SERVICIO DE DESPLIEGUE DE LA SOLUCIÓN
+El contratista deberá desplegar los servicios requeridos en un máximo de 30 días calendario
+SALUDPOL
+en coordinación con la entidad. La entidad entregará la información necesaria antes del
+V°B°
+inicio del despliegue de los servicios.
+W. BAUTISTA P.
+El servicio incluye la implementación de los servidores y servicios de TI, así como la
+migración de aplicaciones, sin embargo, se requiere un acompañamiento durante 30 días
+del personal de SALUDPOL para el despliegue de sus aplicaciones.
+Las particiones de los servidores serán realizadas conforme el personal de la Oficina de
+Tecnologia de la Información lo indique en coordinación con el contratista.
+El contratista del servicio se compromete a firmar y entregar al inicio del servicio el acuerdo
+de confidencialidad y cumplimiento de la Política de Seguridad de la Información del
+SALUDPOL.
+III.12 SOPORTE TÉCNICO y CAPACITACIÓN
+3.12.1 SOPORTE TÉCNICO DE LA MARCA
+Este soporte debe cumplir con las siguientes características mínimas, inspiradas en los
+niveles de servicio ofrecidos en el "Soporte Business" de proveedores de nubes públicas.
+Disponibilidad 24/7: El soporte debe estar disponible 24 horas al día, 7 días a la
+semana, incluyendo días festivos, para asegurar una respuesta continua a cualquier
+problema o incidente que pueda surgir.
+Tiempo de Respuesta Prioritario:
+Incidentes Críticos: El soporte debe proporcionar un tiempo de respuesta inicial
+máximo de 15 minutos para incidentes que tengan un impacto severo en la
+operatividad del servicio, tales como caídas completas del sistema o interrupciones
+significativas en los servicios críticos.
+Incidentes Importantes: Un tiempo de respuesta inicial máximo de 1 hora para
+incidentes que afectan significativamente la operación, como problemas que
+degradan el rendimiento del sistema, pero no lo detienen completamente.
+Incidentes Menores: Un tiempo de respuesta inicial máximo de 2 horas para
+problemas de menor impacto que afectan parcialmente la funcionalidad del servicio
+pero permiten que las operaciones continúen con algunas restricciones.

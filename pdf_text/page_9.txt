@@ -1,0 +1,53 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policía Nacional del Perú - SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+contenedores que sean parte de la solución desplegada en el cloud (HSS) como servicio
+PaaS o SaaS o agente del fabricante cloud, en el contexto de una implementación en el
+sector público en Perú. El servicio debe cumplir con las siguientes especificaciones
+mínimas:
+Características y Especificaciones:
+1. Capacidad de Protección
+Prevención de Ransomware: El servicio deberá proteger contra más del 99% de los
+tipos conocidos de ransomware, utilizando motores de detección de ransomware y
+honeypots dinámicos.
+Protección Integral contra Amenazas: El servicio deberá detectar y mitigar
+amenazas avanzadas, incluyendo inyecciones SQL, cross-site scripting (XSS), cargas
+de shells web, inyecciones de comandos/código, inclusión de archivos, acceso a
+archivos sensibles y explotación de vulnerabilidades de terceros.
+2. Gestión y Monitorización Centralizada:
+Consola de Administración: El servicio deberá incluir herramientas de gestión
+centralizada con dashboards en tiempo real, reportes detallados sobre incidentes y
+rendimiento, y estadísticas de tráfico.
+Actualización y Parcheo de Seguridad: El servicio deberá implementar parches de
+seguridad y actualizaciones automáticas para mantener el HSS siempre actualizado
+contra las últimas amenazas conocidas.
+3. Cumplimiento y Conformidad:
+Conformidad con Normativas y Estándares Internacionales: El servicio deberá
+cumplir con normativas y estándares internacionales de seguridad, así como con las
+SALUDPOL
+regulaciones específicas del gobierno peruano.
+V°B°
+BAUTISTA P.
+4. Alta Disponibilidad y Resiliencia:
+Despliegue en Clúster: Los motores y componentes del HSS deberán estar
+desplegados en configuraciones redundantes para asegurar la continuidad del
+servicio en caso de fallos.
+5. Facilidad de Integración:
+Compatibilidad con Otros Servicios Cloud: El HSS deberá ser compatible con
+otros servicios en la nube, facilitando su integración en un entorno híbrido o multi-
+cloud.
+6. Escalabilidad:
+Escalabilidad Automática: El servicio deberá permitir la escalabilidad automática
+para adaptarse a cambios en la demanda de tráfico y recursos, sin afectar el
+rendimiento o la seguridad.
+Detalles Técnicos Principales:
+1. Detección de intrusiones: El servicio deberá detectar y bloquear más de 35 tipos de
+intrusiones diferentes.
+2. Protección de Ransomware: El servicio deberá incluir una capacidad avanzada de
+prevención y mitigación de ransomware, incluyendo la implementación de políticas de
+protección contra ransomware y la configuración de backups permanentes a nivel de
+hora.

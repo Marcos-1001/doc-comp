@@ -1,0 +1,65 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú - SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+El contratista debe manejar un sistema de tickets que permita registrar y gestionar tanto
+solicitudes de servicio (requerimientos) como incidentes.
+d. Tiempos de Respuesta y Solución
+Tiempo de Respuesta: El contratista debe comenzar la atención a cualquier incidente o
+solicitud en un máximo de 15 minutos desde el registro del mismo.
+Tiempos de Solución por Nivel de Urgencia:
+Alta Urgencia: Máximo 1 hora para resolver incidentes que afectan criticamente la
+operación de los servicios. Son incidentes que necesitan un tratamiento especial
+para la organización por su alto impacto; su inatención inmediata afecta o podría
+afectar significativamente la operación de algún componente de la infraestructura
+tecnológica.
+Media Urgencia: Máximo 3 horas para incidentes que tienen un impacto moderado
+en los servicios. Son incidentes con un tiempo de atención intermedio; su inatención
+afecta o podria afectar moderadamente a la operación de algún componente de la
+infraestructura tecnológica.
+Baja Urgencia: Máximo 4 horas para incidentes de impacto leve. Son incidentes
+con un tiempo de atención menor; su inatención afecta o podría afectar levemente
+a la operación de algún componente de la infraestructura tecnológica.
+LA
+La clasificación de la urgencia la realizará el personal del SALUDPOL en el registro del
+incidente.
+SALUDPOL
+El personal del SALUDPOL verificará que se haya dado la solución al incidente antes de
+aceptar el fin del tiempo de solución.
+V°B°
+W.
+BAUTISTAP.
+e.
+Gestión de Incidentes
+Sistema de Gestión de Incidencias: El contratista debe proporcionar una
+plataforma web para la gestión de incidencias, problemas y solicitudes.
+Automatización: Utilización de herramientas para la automatización de la
+priorización y el seguimiento de incidentes.
+f.
+Medios de Comunicación para el Registro de Incidentes
+Sistema de Tickets: Principal medio para el registro y seguimiento de incidentes.
+Teléfono y Correo Electrónico: Canales adicionales para asegurar la
+comunicación efectiva y rápida.
+3.12.2 CAPACITACIÓN
+El contratista debe incluir un curso de capacitación oficial del proveedor de nube
+para la Gestión de los Servicios requeridos ofertados de 25 horas como mínimo para
+12 personas indicadas por SALUDPOL.
+El contratista al finalizar el curso deberá emitir un certificado o constancia para las
+12 personas que recibieron la capacitación.
+El contratista debe incluir los voucher para el examen de certificación oficial una vez
+culminado el curso.
+III.13 CERTIFICADOS DE SEGURIDAD DE LA INFORMACIÓN DE LA PLATAFORMA CLOUD
+ISO 27001:2013
+Classified Cybersecurity Protection of China's Ministry of Public Security
+ISO 27017:2015
+Singapore MTCS Level 3 Certification
+ISO 20000-1:2011
+SOC audit
+ISO 27018:2014
+PCI DSS Certification
+ISO 22301:2012
+CSA STAR Gold Certification
+Gold O&M (TRUCS)

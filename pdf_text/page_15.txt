@@ -1,0 +1,72 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policía Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+Certification for the Capability of Protecting Cloud Service User Data (TRUCS)
+ITSS Cloud Computing Service Capability Evaluation by the Ministry of Industry and
+Information Technology (MIIT)
+TRUCS (Trusted Cloud Service)
+Cloud Service Security Certification - Cyberspace Administration of China (CAC)
+International Common Criteria EAL 3+ Certification
+ISO 27018:2014
+ISO 29151:2017
+ISO 27701:2019
+BS 10012:2017
+IV.
+CONDICIONES ADMINISTRATIVAS MÍNIMAS:
+IV.1 PLAZO DE LA PRESTACIÓN
+El servicio de hosting será brindado por 365 días calendario, contados a partir del dia
+siguiente de suscrita el Acta de implementación, fecha en que el pago será contabilizado.
+El Acta de implementación debe contener la siguiente información:
+Características técnicas y configuraciones de los servidores implementados.
+Documento firmado de confidencialidad por parte del contratista.
+Lista de contactos para soporte del contratista. Se precisa que el servicio de soporte
+deberá tener la disponibilidad de 24 horas X 7 días a la semana, el tiempo que dure
+el contrato del servicio. Este deberá ser por los canales de atención tales como
+correo, número de celular y/o 0800
+En caso de falla de algún componente del servicio, el contratista deberá proceder con la
+reparación y/o reemplazo sin costo alguno para la entidad; asegurando la continuidad del
+servicio de hosting.
+El plazo máximo para la implementación del servicio será de treinta (30) días calendario,
+contados desde el día siguiente de la suscripción del contrato.
+El plazo de la prestación se tomará como fecha de inicio al día siguiente de suscrito Acta
+de Implementación.
+IV.2 DEL PAGO
+El postor deberá ingresar la facturación e informe en forma mensual hasta los primeros
+SALUDPOL
+quince (15) días calendarios de cada mes y será ingresada en formato fisico vía mesa de
+V°B®
+partes en SALUDPOL.
+BAUTISTA P.
+Para el pago del primer mes, el contratista deberá adjuntar a su facturación el "Acta de
+implementación del servicio", el "Informe mensual del estado del servicio" y "Facturación".
+Para los pagos del segundo al doceavo mes, el contratista deberá adjuntar a su facturación
+el informe mensual del estado del servicio.
+IV.3
+DE LA CONFORMIDAD
+La implementación del servicio contará con el "Acta de implementación", la cual será
+firmada por el responsable de la Oficina de Tecnologia de la Información de SALUDPOL
+una vez finalizadas las actividades correspondientes y activadas el servicio.
+Las conformidades del servicio serán emitidas mensualmente por el responsable de la
+Oficina de Tecnología de la Información de SALUDPOL, previa recepción por parte del
+contratista del "Informe mensual del estado del servicio", con la siguiente información:
+Reporte de Actividad Mensual: Un resumen de todos los tickets gestionados,
+incluyendo detalles de cada incidente y solicitud, tiempos de respuesta y solución, y
+análisis de tendencias.
+Inventario y Diagramas: Un informe mensual que incluya un inventario detallado de
+todos los recursos en la nube y diagramas actualizados de la arquitectura de la
+infraestructura, reflejando cualquier cambio realizado durante el mes.
+Informe de Rendimiento de Recursos.
+Análisis de Seguridad: Resumen de las actividades de seguridad, incluyendo
+incidentes de seguridad gestionados, estado de las políticas de firewall, y análisis
+de amenazas detectadas.
+IV.4 ACTIVIDADES
+JEFE o LÍDER:
+Análisis de requisitos: El líder de proyecto debe comprender los requisitos del cliente y definir
+claramente las necesidades y objetivos del proyecto.
+Planificación del proyecto: El lider de proyecto debe desarrollar un plan detallado que incluya
+la configuración del servidor, la migración de datos, las pruebas de rendimiento, la
+implementación de medidas de seguridad y el cronograma de actividades.

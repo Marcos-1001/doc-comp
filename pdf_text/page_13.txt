@@ -1,0 +1,62 @@
+PERU
+Ministerio del Interior
+Fondo de Aseguramiento en Salud
+Oficina de Tecnología
+de la Policia Nacional del Perú SALUDPOL
+de la Información
+"Decenio de la Igualdad de Oportunidades para mujeres y hombres"
+Implementación de Backups: Configuración y administración de políticas de backup
+para asegurar la protección de los datos.
+Recuperación ante desastres: Desarrollo y ejecución de planes de recuperación ante
+desastres para minimizar la pérdida de datos y el tiempo de inactividad.
+Verificación de Backups: Realización de pruebas periódicas para asegurar la
+efectividad de los backups y su capacidad de restauración.
+Networking y Seguridad
+Configuración de Redes Virtuales: Asistencia en la configuración de redes virtuales,
+incluyendo VPCs, subredes, y direccionamiento IP.
+Gestión de Firewalls: Configuración y mantenimiento de reglas de firewall, listas de
+control de acceso (ACLs) y políticas de seguridad para proteger los recursos.
+VPN y Enrutamiento: Configuración y soporte para conexiones VPN y enrutamiento
+para asegurar la conectividad segura entre diferentes entornos.
+Monitoreo y Alarmas
+Configuración de alarmas: Establecimiento de alarmas para monitorear el
+rendimiento y la disponibilidad de recursos clave (CPU, memoria, red, etc.).
+Respuesta a Alertas: Gestión proactiva y resolución de alertas generadas por el
+sistema de monitoreo para prevenir o mitigar problemas.
+Análisis de Rendimiento: Evaluación y reporte periódico sobre el rendimiento de la
+REDES
+infraestructura y los servicios, incluyendo recomendaciones para la mejora continua.
+Administración y Mantenimiento de la Plataforma
+Actualización de Sistemas y Aplicaciones: Coordinación y gestión de la instalación
+SALUDPOL
+de actualizaciones y parches de sistemas operativos y aplicaciones para mantener
+la seguridad y la operatividad.
+V°B°
+Optimización de Recursos: Revisión y recomendación de estrategias para optimizar
+W. BAUTISTA P.
+el uso de recursos en la nube, minimizando costos operativos sin comprometer el
+rendimiento.
+Auditorías de Seguridad: Realización de auditorias para asegurar que la
+infraestructura cumple con las políticas de seguridad y regulaciones vigentes.
+Protección Anti-DDoS (Como uno de los componentes de seguridad)
+Monitoreo de Tráfico y Mitigación de Ataques: Supervisión continua y mitigación de
+ataques DDoS para asegurar la disponibilidad de los servicios.
+Ajuste de Políticas de Defensa: Modificación de las políticas de defensa Anti-DDoS
+según sea necesario para adaptarse a nuevas amenazas.
+Reportes de Incidentes de Seguridad: Análisis detallado y reporte de los ataques
+DDoS y las medidas tomadas para mitigar su impacto.
+Administración de los servicios implementados en Huawei Cloud
+Se incluyen como parte del soporte todos los componentes implementados sobre
+Huawei Cloud como parte de la definición de este TDR.
+Exclusiones del Soporte Técnico
+El soporte técnico proporcionado no incluirá:
+Gestión de Sistemas Operativos: Administración y resolución de problemas internos
+de los sistemas operativos dentro de las VMs.
+Aplicaciones de terceros: Instalación, configuración, y soporte para aplicaciones de
+terceros no incluidas en los servicios nativos de Huawei Cloud.
+Problemas Internos de la Red del Cliente: Soporte para problemas de red que
+ocurren dentro de la infraestructura del cliente y no en el entorno de la nube.
+Desarrollo de Software: Actividades relacionadas con el desarrollo, prueba, y
+mantenimiento de aplicaciones personalizadas que no forman parte de los servicios
+cloud.
+c. Gestión de Tickets
