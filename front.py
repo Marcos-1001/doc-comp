@@ -33,7 +33,7 @@ def converting_pdf(doc1, doc2, user):
         parsing_pdf.big2small(os.path.join(folder_path, 'jsons', f"doc1-{user}.json"))
         parsing_pdf.big2small(os.path.join(folder_path, 'jsons', f"doc2-{user}.json"))
     
-    with st.spinner('Creando la base de datos...'):
+    with st.spinner('Ingestando documentos...'):
         embedding.for_making_a_db(bedrock_runtime, document_1 = f"doc1-{user}", document_2 = f"doc2-{user}", user = user)
     
 
@@ -42,33 +42,43 @@ def converting_pdf(doc1, doc2, user):
 st.title('Comparador de documentos')
 # usuario
 st.write('Bienvenido a nuestro comparador de documentos')
-user = st.text_input('Por favor, introduce tu nombre')
+
+
+user = st.text_input('Por favor, introduce tu correo electrónico')
+
 
 # 
-st.write('Por favor, sube dos documentos para poder compararlos')
+st.write('Por favor, sube dos documentos TDR no escaneados para poder compararlos')
 # Make a chat 
 # submit two documents
 doc1 = st.file_uploader('Carga el documento 1')
 doc2 = st.file_uploader('Carga el documento 2')
 
+# check if docs are already uploaded in the system
 
 
+if (user is not None and '@' in user.lower()):
+    if doc1 is not None and doc2 is not None and st.button('Subir documentos'):     
+        converting_pdf(doc1, doc2, user)
 
-if doc1 is not None and doc2 is not None and st.button('Subir documentos') and user is not None:     
-    converting_pdf(doc1, doc2, user)
-
+    exist_doc1 = os.path.exists(os.path.join(folder_path, 'jsons', f"doc1-{user}.json"))
+    exist_doc2 = os.path.exists(os.path.join(folder_path, 'jsons', f"doc2-{user}.json"))
+    print(exist_doc1, exist_doc2)
     
-st.subheader('Chat')
-
-prompt = st.chat_input('Haz una pregunta sobre los documentos')
-if prompt:
-    with st.spinner('Revisando documentos...'):
-        response = main.query_function(bedrock_runtime, prompt, user=user)
     
-    print(response)
-    st.markdown('Esto es lo que hemos encontrado en los documentos:')
-    st.markdown(response)
-    prompt = None
+    if  exist_doc1 and exist_doc2:
+        st.subheader('Chat')
+        prompt = st.chat_input('Haz una pregunta sobre los documentos')
+        if prompt :
+            st.write(prompt)
+
+            with st.spinner('Revisando documentos...'):
+                response = main.query_function(bedrock_runtime, prompt, user=user)
+
+            print(response)
+            st.markdown('Esto es lo que hemos encontrado en los documentos:')
+            st.markdown(response)
+            prompt = None
 
 
 

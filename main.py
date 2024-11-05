@@ -67,9 +67,10 @@ def call_claude_async(bedrock: boto3.client,
     """
     This function calls the model and returns the response
     """
-    prompt = generate_prompt_for_retinfo(retrieved_info_1= retrieved_info_1, 
-                                         retrieved_info_2= retrieved_info_2, 
-                                         query=query)
+    prompt = generate_prompt_for_retinfo(section=section,
+                                        retrieved_info_1= retrieved_info_1, 
+                                        retrieved_info_2= retrieved_info_2, 
+                                        query=query)
     call = claude_call(bedrock=bedrock, 
                         user_message=prompt,
                         query=query)
@@ -109,7 +110,8 @@ def query_function(bedrock : boto3.client,
 
 
     result = [""] * len(content_sections_1)
-    
+    for content in range(len(content_sections_1)):
+        print(f"Seccion: {content_sections_1[content][0]}")
     # Use ThreadPoolExecutor to parallelize the calls to the model
     with concurrent.futures.ThreadPoolExecutor() as executor:
         # Create a list of futures
@@ -136,7 +138,9 @@ def query_function(bedrock : boto3.client,
             result[i] = future.result()
     
     # convert string to dictionary
+    print(result)
     result = [json.loads(r.replace("\n"," ")) for r in result]
+    print(result)
     result = ['### ' + r['Seccion'] +'\n\n'+  r['Respuesta'] for r in result]
 
          

@@ -154,15 +154,15 @@ def generate_prompt_for_comparison(retrieved_info, section, doc1, doc2, query):
         posiblemente sea un error ligero de lectura hecho por el parser.
 
         El formato del archivo JSON que vas a generar como respuesta que tiene que seguir es el siguiente:
-            Seccion : <nombre de la seccion y número que se encuentra en la primera linea de ambos extractos>
+            Seccion : <nombre de la seccion y número que se recibe como parámetro>
             Respuesta : <respuesta extraida basda de la seccion>
         
-        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.
-        NO AÑADAS NINGÚN MENSAJE EXTRA COMO "DESPUES DE ANALIZAR" O "LUEGO DE REVISAR" O "DESPUES DE EXAMINAR" O SIMILARES.
+        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO JSON SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.
+        NO AÑADAS NINGÚN MENSAJE EXTRA COMO "DESPUES DE ANALIZAR" O "LUEGO DE REVISAR" O "DESPUES DE EXAMINAR" O SIMILARES. SIEMPRE DEBES MANTENER EL ORDEN DESCRIPTO ANTERIORMENTE.
             
-        <Section>
+        <Seccion>
         {section}
-        </Section>
+        </Seccion>
 
         <Diferencias>
         {retrieved_info}
@@ -177,7 +177,7 @@ def generate_prompt_for_comparison(retrieved_info, section, doc1, doc2, query):
         </Documento2>
         """
 
-def generate_prompt_for_retinfo(retrieved_info_1, retrieved_info_2 ,query):
+def generate_prompt_for_retinfo(section,retrieved_info_1, retrieved_info_2 ,query):
     return f"""
         
         En el Estado Peruano se dan miles de licitaciones día a día para proyectos o compras. Estos contratos para que se aprueben pasan por un proceso largo de revisiones y cambios.
@@ -200,15 +200,15 @@ def generate_prompt_for_retinfo(retrieved_info_1, retrieved_info_2 ,query):
         Tu proceso de pensamiento en la parte del formato donde corresponde.
         
 
-        
+
         El formato del archivo JSON que vas a generar como respuesta que tiene que seguir es el siguiente:
-            Seccion : <nombre de la seccion y número que se encuentra en la primera linea de ambos extractos>
+            Seccion : <nombre y número de la seccion que se recibe como parametro>
             Respuesta : <respuesta extraida basda de la seccion>
             Citación : <cita del extracto>
             Proceso de pensamiento : <proceso de pensamiento que has seguido para extraer la información>
 
-        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.
-        NO AÑADAS NINGÚN MENSAJE EXTRA COMO "DESPUES DE ANALIZAR" O "LUEGO DE REVISAR" O "DESPUES DE EXAMINAR" O SIMILARES.
+        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO JSON SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.
+        NO AÑADAS NINGÚN MENSAJE EXTRA COMO "DESPUES DE ANALIZAR" O "LUEGO DE REVISAR" O "DESPUES DE EXAMINAR" O SIMILARES. SIEMPRE DEBES MANTENER EL ORDEN DESCRIPTO ANTERIORMENTE.
 
         <documento 1>
         {retrieved_info_1}
@@ -218,6 +218,9 @@ def generate_prompt_for_retinfo(retrieved_info_1, retrieved_info_2 ,query):
         {retrieved_info_2}
         </documento 2>
         
+        <Seccion>
+        {section}
+        </Seccion>
         
         
 
