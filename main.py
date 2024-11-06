@@ -139,7 +139,7 @@ def query_function(bedrock : boto3.client,
     
     # convert string to dictionary
     print(result)
-    result = [json.loads(r.replace("\n","\\n")) for r in result]
+    result = [json.loads(r.replace("\n","\n\n")) for r in result]
     print(result)
     result = ['### ' + r['Seccion'] +'\n\n'+  r['Respuesta'] for r in result]
 
