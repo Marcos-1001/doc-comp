@@ -34,7 +34,7 @@ def converting_pdf(doc1, doc2, user):
         parsing_pdf.big2small(os.path.join(folder_path, 'jsons', f"doc2-{user}.json"))
     
     with st.spinner('Ingestando documentos...'):
-        embedding.for_making_a_db(bedrock_runtime, document_1 = f"doc1-{user}", document_2 = f"doc2-{user}", user = user)
+        embedding.for_making_a_db(bedrock_runtime, document_1 = f"doc1-{user}", document_2 = f"doc2-{user}", username= user)
     
 
 
