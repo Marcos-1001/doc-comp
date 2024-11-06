@@ -76,7 +76,7 @@ def info_sections(retrieved_sections : list, document_1 : str = "tdr_v4"):
     return sections_content
 
 
-def diferences_between_docs(sections, user= "user"):
+def diferences_between_docs(sections, username= "username"):
 
     """
     This function returns the differences between the sections of the two documents
@@ -92,28 +92,16 @@ def diferences_between_docs(sections, user= "user"):
     """db.diff_table.difference"""
 
     # ESTO ES MUY INEFICIENTE - HAY QUE CAMBIARLO, NO PUEDO ESTAR TRAYENDO TODA LA TABLA
+    #print("Username: ", username)
     differences = db.Session.execute(
-        db.select(db.diff_table.section ).filter(db.diff_table.user == user)
+        db.select(db.diff_table.section, db.diff_table.difference ).filter(db.diff_table.username == username and db.diff_table.section == sections)
     )
-    result_differences = []
     
-        
-    for row in differences:
-        for section in sections:
-            if row[0] in section:
-                result_differences.append(row[0])
-
-    differences_content = db.Session.execute(
-        db.select(db.diff_table.section, db.diff_table.difference).filter(
-            db.diff_table.section.in_(result_differences)
-        ).filter(db.diff_table.user == user)
-    )
-
-    return differences_content
+    return differences
     
     
 
-def retrieve_info(bedrock : boto3.client, query, top_k=4, document = "tdr_v4", user = "user"):
+def retrieve_info(bedrock : boto3.client, query, top_k=4, document = "tdr_v4", username = "username"):
     """
     Returns the top_k most similar chunks to the query based on the cosine similarity of the embeddings
 
@@ -136,7 +124,7 @@ def retrieve_info(bedrock : boto3.client, query, top_k=4, document = "tdr_v4", u
     
     KNN = db.Session.execute(
         db.select(db.Chunks_table.section,
-                  db.Chunks_table.chunk).filter(db.Chunks_table.user == user )
+                  db.Chunks_table.chunk).filter(db.Chunks_table.username == username )
                   .order_by(
                 db.Chunks_table.embedding.cosine_distance(query_embedding)
             ).limit(top_k))
@@ -157,7 +145,7 @@ def insert_data(elements: list):
         print(f"Error occurred: {e}")
 
 
-def make_chunk_table(bedrock : boto3.client, knowledge_base : dict,  document_id: str, user = "user"):
+def make_chunk_table(bedrock : boto3.client, knowledge_base : dict,  document_id: str, username = "username"):
 
     """
     This function creates takes the chunks from every section in the document and creates a table with the embeddings    
@@ -180,7 +168,7 @@ def make_chunk_table(bedrock : boto3.client, knowledge_base : dict,  document_id
                                             document = document_id, 
                                             chunk = knowledge_base_content[key][chunk], 
                                             embedding = response_body['embedding'],
-                                            user = user
+                                            username = username
                                 )
                             )
     print(f"The number of elements is {len(elements)}") 
@@ -191,7 +179,7 @@ def make_chunk_table(bedrock : boto3.client, knowledge_base : dict,  document_id
 
 
 
-def make_diff_table(document_1, document_2, user = "user"):
+def make_diff_table(document_1, document_2, username = "username"):
     """
     This function creates a table with the differences between the sections
     """
@@ -212,7 +200,7 @@ def make_diff_table(document_1, document_2, user = "user"):
                     db.diff_table(
                         section = key,
                         difference = f"Esta seccion no existe en el {document_2}",
-                        user = user
+                        username = username
                     )
                 )
         else: 
@@ -226,7 +214,7 @@ def make_diff_table(document_1, document_2, user = "user"):
                     db.diff_table(
                         section = key,
                         difference = diff,
-                        user = user
+                        username = username
                     )
                 )
     for key in doc2:
@@ -235,7 +223,7 @@ def make_diff_table(document_1, document_2, user = "user"):
                     db.diff_table(
                         section = key,
                         difference = f"Esta seccion no existe en el {document_1}",
-                        user = user
+                        username = username
                     )
                 )
     
@@ -245,7 +233,7 @@ def make_diff_table(document_1, document_2, user = "user"):
     
     
 
-def for_making_a_db(bedrock_runtime, document_1 = "tdr_v4", document_2 = "tdr_v6", user = "user"):
+def for_making_a_db(bedrock_runtime, document_1 = "tdr_v4", document_2 = "tdr_v6", username = "username"):
     
     
     currrent_directory = os.getcwd()
@@ -259,19 +247,19 @@ def for_making_a_db(bedrock_runtime, document_1 = "tdr_v4", document_2 = "tdr_v6
     
     
     
-    make_chunk_table(bedrock_runtime, knowledge_base_1,  document_id=document_1, user = user)
-    make_chunk_table(bedrock_runtime, knowledge_base_2,  document_id=document_2, user = user)
-    make_diff_table(document_1, document_2, user = user)
+    make_chunk_table(bedrock_runtime, knowledge_base_1,  document_id=document_1, username = username)
+    make_chunk_table(bedrock_runtime, knowledge_base_2,  document_id=document_2, username = username)
+    make_diff_table(document_1, document_2, username = username)
     
 
 
 
-def truncate_the_tables(user = "user"):
+def truncate_the_tables(username = "username"):
 
 
-    # truncate all row with the user "user"
-    db.Session.execute(db.Chunks_table.__table__.delete().where(db.Chunks_table.user == user))
-    db.Session.execute(db.diff_table.__table__.delete().where(db.diff_table.user == user))
+    # truncate all row with the username "username"
+    db.Session.execute(db.Chunks_table.__table__.delete().where(db.Chunks_table.username == username))
+    db.Session.execute(db.diff_table.__table__.delete().where(db.diff_table.username == username))
     
     db.Session.commit()
     db.Session.close()

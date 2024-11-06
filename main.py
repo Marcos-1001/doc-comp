@@ -35,16 +35,19 @@ def call_claude_comparison(bedrock: boto3.client,
                            section: str,                           
                             retrieved_info_1: str,
                             retrieved_info_2: str,
-                            query: str
+                            query: str, 
+                            username: str = "user"
                         ) -> str:
     """
     This function calls the model and returns the response
     """
     
-    differences = diferences_between_docs(sections=[section])
+    differences = diferences_between_docs(sections=section, username=username)
     
     
-    differences = [f"{section}: {difference}" for section, difference in differences]
+    differences = [f"{difference[0]}: {difference[1]}" for  difference in differences]
+
+    #print (differences)
     
     prompt = generate_prompt_for_comparison(retrieved_info=differences,
                                             section=section,
@@ -63,7 +66,10 @@ def call_claude_async(bedrock: boto3.client,
                       section: str,
                       retrieved_info_1: str,
                         retrieved_info_2: str,
-                        query: str) -> str:
+                        query: str,
+                        username: str = "user"
+                        ) -> str:
+                        
     """
     This function calls the model and returns the response
     """
@@ -94,7 +100,7 @@ def query_function(bedrock : boto3.client,
 
     #query = improve_query(bedrock, query)
     
-    retrieved_info_doc1 = retrieve_info(bedrock, query, top_k, user=user)
+    retrieved_info_doc1 = retrieve_info(bedrock, query, top_k, username=user)
     retrieved_sections = list(set([section for section, chunk in retrieved_info_doc1]))
     
     # Gets the content of the sections and joins them in a single string 
@@ -106,6 +112,7 @@ def query_function(bedrock : boto3.client,
 
     async_func = call_claude_async
     if 'COMPARAR' in response:     
+        print("ESTAMOS COMPARANDO")
         async_func = call_claude_comparison
 
 
@@ -127,7 +134,8 @@ def query_function(bedrock : boto3.client,
                                     content_sections_1[content][0], 
                                     content_sections_1[content][1], 
                                     content_sections_2[content][1], 
-                                    query                                    
+                                    query,
+                                    user                                    
                                 ) 
                    for content in range(len(content_sections_1))]
         
@@ -138,11 +146,10 @@ def query_function(bedrock : boto3.client,
             result[i] = future.result()
     
     # convert string to dictionary
-    print(result)
-    result = [json.loads(r.replace("\n","\n\n")) for r in result]
-    print(result)
-    result = ['### ' + r['Seccion'] +'\n\n'+  r['Respuesta'].replace("-","\n-") for r in result]
+    
 
+    result = sorted(result)
+    
          
     return "\n\n".join(result)
     

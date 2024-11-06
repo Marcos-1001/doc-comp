@@ -35,7 +35,7 @@ Base = declarative_base()
 class Chunks_table(Base):
     __tablename__ = 'chunks_table'
     id = Column(Integer, primary_key=True)
-    user = Column(String)
+    username = Column(String)
     section = Column(String)
     chunk = Column(String)
     document = Column(String)    
@@ -49,7 +49,7 @@ class Chunks_table(Base):
 class diff_table(Base): 
     __tablename__ = 'diff_table'
     id = Column(Integer, primary_key=True)
-    user = Column(String)
+    username = Column(String)
     section = Column(String)
     difference = Column(String)
 

@@ -135,6 +135,9 @@ def generate_result_based_query(query, final_result):
         </Resultado>
 
         """
+# NOTA: Un dato no es RELEVANTE si este trata de una coma, un punto, un o varios espacios, un guión o cualquier otro tipo de dato que no aporte información relevante a la consulta, pues 
+        #posiblemente sea un error ligero de lectura hecho por el parser.
+        #        
 
 def generate_prompt_for_comparison(retrieved_info, section, doc1, doc2, query):
     return f"""
@@ -150,14 +153,18 @@ def generate_prompt_for_comparison(retrieved_info, section, doc1, doc2, query):
         Por favor, responde con la información solicitada de manera literal, pero si lo que te he pasado es una cadena vacía o la información traída no guarda relación con lo solicitado, entonces pido exclusivamente que me digas que ambos documentos presentan la misma información. NO TE EXPLAYES MÁS DE LO NECESARIO. 
         Previamente a responder, piensa dos veces si la respuesta que estás dando a la consulta es la correcta. 
         
-        NOTA: Un dato no es RELEVANTE si este trata de una coma, un punto, un o varios espacios, un guión o cualquier otro tipo de dato que no aporte información relevante a la consulta, pues 
-        posiblemente sea un error ligero de lectura hecho por el parser.
-
-        El formato del archivo JSON que vas a generar como respuesta que tiene que seguir es el siguiente:
-            Seccion : <nombre de la seccion y número que se recibe como parámetro>
-            Respuesta : <respuesta extraida basda de la seccion>
         
-        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO JSON SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.
+
+        El formato del archivo markdown que vas a generar como respuesta que tieneS que seguir es el siguiente:
+            ### <nombre de la seccion y número que se recibe como parámetro>
+            <respuesta extraida basda de la seccion>
+        
+        
+        NOTA: Ten cuidado con la respuesta que estás dando realmente existe para ambos documentos, piensa dos veces si la respuesta que estás dando a la consulta es la correcta. Por más que eres una IA experta igual estás sujeta a equivocarte, 
+        por lo cual siempre intenta mitigar la posibilidad de extraer información que no es relevante para la consulta o inexistente. 
+                
+        
+        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO HTML SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.        
         NO AÑADAS NINGÚN MENSAJE EXTRA COMO "DESPUES DE ANALIZAR" O "LUEGO DE REVISAR" O "DESPUES DE EXAMINAR" O SIMILARES. SIEMPRE DEBES MANTENER EL ORDEN DESCRIPTO ANTERIORMENTE.
             
         <Seccion>
@@ -195,19 +202,19 @@ def generate_prompt_for_retinfo(section,retrieved_info_1, retrieved_info_2 ,quer
 
         NOTA: Ten cuidado con la respuesta que estás dando realmente existe para ambos documentos, piensa dos veces si la respuesta que estás dando a la consulta es la correcta. Por más que eres una IA experta igual estás sujeta a equivocarte, 
         por lo cual siempre intenta mitigar la posibilidad de extraer información que no es relevante para la consulta o inexistente. 
-
+        
+        NOTA 2: Si vas a enumerar detalles en tu respuesta cada guión separalo por dos saltos de linea de esta manera '\\n\n'. Caso contrario, solo menciona la información relevante y terminalo en un salto de linea.
 
         Tu proceso de pensamiento en la parte del formato donde corresponde.
         
 
 
-        El formato del archivo JSON que vas a generar como respuesta que tiene que seguir es el siguiente:
-            Seccion : <nombre y número de la seccion que se recibe como parametro>
-            Respuesta : <respuesta extraida basda de la seccion>
-            Citación : <cita del extracto>
-            Proceso de pensamiento : <proceso de pensamiento que has seguido para extraer la información>
+        El formato del archivo markdown que vas a generar como respuesta que tiene que seguir es el siguiente:
+            ### <nombre y número de la seccion que se recibe como parametro>
+            <respuesta extraida basda de la seccion>
+            
 
-        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO JSON SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.
+        POR NINGÚN MOTIVO DEBES DEJAR DE RESPONDER CON EL FORMATO markdown SOLICITADO. ES TOTALMENTE MANDATORIO QUE RESPONDAS CON EL FORMATO SOLICITADO.
         NO AÑADAS NINGÚN MENSAJE EXTRA COMO "DESPUES DE ANALIZAR" O "LUEGO DE REVISAR" O "DESPUES DE EXAMINAR" O SIMILARES. SIEMPRE DEBES MANTENER EL ORDEN DESCRIPTO ANTERIORMENTE.
 
         <documento 1>
