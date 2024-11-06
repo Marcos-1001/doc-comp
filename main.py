@@ -141,7 +141,7 @@ def query_function(bedrock : boto3.client,
     print(result)
     result = [json.loads(r.replace("\n","\n\n")) for r in result]
     print(result)
-    result = ['### ' + r['Seccion'] +'\n\n'+  r['Respuesta'] for r in result]
+    result = ['### ' + r['Seccion'] +'\n\n'+  r['Respuesta'].replace("-","\n-") for r in result]
 
          
     return "\n\n".join(result)
