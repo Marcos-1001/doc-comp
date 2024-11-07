@@ -9,6 +9,9 @@ from tqdm import tqdm
 from ai_call import embed_call, claude_call, generate_prompt_compare_or_info
 from pprint import pprint
 from difflib import SequenceMatcher, unified_diff
+from sqlalchemy import and_
+
+
 """ ----------------- CREDENTIALS -----------------""" 
 load_dotenv()
 aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
@@ -69,7 +72,7 @@ def info_sections(retrieved_sections : list, document_1 : str = "tdr_v4"):
                         stack.append(child)
     
     print("-------------------------------------")            
-    print(f"Secciones mandadas al LLM:  {[section[0] for section in sections_content]}")
+    print(f"Secciones mandadas al LLM:  {[f'{section[0]}' for section in sections_content]}")
     print("-------------------------------------")
     
 
@@ -93,9 +96,13 @@ def diferences_between_docs(sections, username= "username"):
 
     # ESTO ES MUY INEFICIENTE - HAY QUE CAMBIARLO, NO PUEDO ESTAR TRAYENDO TODA LA TABLA
     #print("Username: ", username)
+
     differences = db.Session.execute(
-        db.select(db.diff_table.section, db.diff_table.difference ).filter(db.diff_table.username == username and db.diff_table.section == sections)
+        db.select(db.diff_table.section, db.diff_table.difference ).filter(
+            and_(db.diff_table.username == username , db.diff_table.section == sections)
+            )
     )
+    print(f"Username: {username} - Sections: {sections}")
     
     return differences
     

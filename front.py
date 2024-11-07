@@ -75,7 +75,7 @@ if (user is not None and '@' in user.lower()):
             with st.spinner('Revisando documentos...'):
                 response = main.query_function(bedrock_runtime, prompt, user=user)
 
-            print(response)
+            #print(response)
             st.markdown('Esto es lo que hemos encontrado en los documentos:')
             st.markdown(response)
             prompt = None

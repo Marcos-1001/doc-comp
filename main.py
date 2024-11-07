@@ -47,7 +47,7 @@ def call_claude_comparison(bedrock: boto3.client,
     
     differences = [f"{difference[0]}: {difference[1]}" for  difference in differences]
 
-    #print (differences)
+    
     
     prompt = generate_prompt_for_comparison(retrieved_info=differences,
                                             section=section,
@@ -148,7 +148,7 @@ def query_function(bedrock : boto3.client,
     # convert string to dictionary
     
 
-    result = sorted(result)
+    result = sorted([res for res in result if "Ambos documentos presentan la misma información." not in res])
     
          
     return "\n\n".join(result)
