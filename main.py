@@ -1,4 +1,4 @@
-from ai_call import embed_call, claude_call, generate_prompt_compare_or_info, generate_prompt_for_retinfo,  generate_result_based_query, generate_prompt_for_comparison
+from ai_call import embed_call, claude_call, generate_prompt_compare_or_info, generate_prompt_for_retinfo,  generate_result_based_query, generate_prompt_for_comparison, generate_improve_query
 from embedding import retrieve_info, info_sections, diferences_between_docs
 from pprint import pprint
 import boto3
@@ -29,6 +29,18 @@ def is_comparison(bedrock: boto3.client,
     
     return response
 
+def improve_query(bedrock: boto3.client,
+                    query: str) -> str:
+        """
+        This function improves the query
+        """
+        prompt = generate_improve_query()
+        response = claude_call(bedrock=bedrock, 
+                                user_message=prompt,
+                                query=query
+                                )['content'][0]['text']
+        
+        return response
 
 
 def call_claude_comparison(bedrock: boto3.client,    
@@ -92,8 +104,8 @@ def query_function(bedrock : boto3.client,
     This function retrieves the top_k most similar chunks to the query based on the cosine similarity of the embeddings
     """
     
-    
     response = is_comparison(bedrock, query)
+    query  =  improve_query(bedrock,query)
 
     #print(response)
     #exit()
@@ -101,6 +113,7 @@ def query_function(bedrock : boto3.client,
     #query = improve_query(bedrock, query)
     
     retrieved_info_doc1 = retrieve_info(bedrock, query, top_k, username=user)
+    print("Retrieved info doc1: ", retrieved_info_doc1)
     retrieved_sections = list(set([section for section, chunk in retrieved_info_doc1]))
     
     # Gets the content of the sections and joins them in a single string 

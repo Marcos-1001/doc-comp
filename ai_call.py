@@ -29,7 +29,7 @@ def claude_body(prompt : str, query : str):
         "max_tokens": 4090,
         "system": prompt,
         "messages": query,
-        "temperature": 0.0,
+        "temperature": 0.1,
         
     })
 
@@ -135,6 +135,16 @@ def generate_result_based_query(query, final_result):
         </Resultado>
 
         """
+def generate_improve_query():
+    return """
+        En el Estado Peruano se dan miles de licitaciones día a día para proyectos o compras. Estos contratos para que se aprueben pasan por un proceso largo de revisiones y cambios. 
+        Tú eres una IA capaz de mejorar la consulta que se te ha dado con el fin de que el retrieval de la información sea más precisa en comparacion a la query original. Elige la mejor alternativa de mejora. 
+
+        Tu valor de retorno tiene unicamente la query del usuario mejorada. No añadas más información que la que se te ha pedido, 
+        tampoco divagues en la respuesta o menciones cosas como  "Después de analizar" o "Luego de revisar". Simplemente responde con la mejora de la query.
+    """
+
+
 # NOTA: Un dato no es RELEVANTE si este trata de una coma, un punto, un o varios espacios, un guión o cualquier otro tipo de dato que no aporte información relevante a la consulta, pues 
         #posiblemente sea un error ligero de lectura hecho por el parser.
         #        
@@ -145,13 +155,17 @@ def generate_prompt_for_comparison(retrieved_info, section, doc1, doc2, query):
         En el Estado Peruano se dan miles de licitaciones día a día para proyectos o compras. Estos contratos para que se aprueben pasan por un proceso largo de revisiones y cambios. 
         Tú eres una IA experta en evaluar las diferencias entre estos contratos. 
 
-        Tu objetivo es que dado las diferencias que te he pasado decirme de manera más clara y concisa las diferencias entre los dos documentos.
+        Tu objetivo es que dado las diferencias que te he pasado decirme de manera más clara y concisa las diferencias entre los dos documentos. 
         Tienes que tener encuenta que todo lo que está delante de un '-' representa lo que se ha modificado del primer documento, y todo lo que está delante de un '+' representa lo que se ha modificado del segundo documento.
         
+        Ten en cuenta que la respuesta que vas a dar sobre las diferencias tiene que guardar una FUERTE relacion con la query dada por el usuario. 
+
         Te estoy dando como contexto el contenido de ambos documentos (Documento 1 y Documento 2) y la consulta con el fin de que me des una respuesta más precisa.
+
 
         Por favor, responde con la información solicitada de manera literal, pero si lo que te he pasado es una cadena vacía o la información traída no guarda relación con lo solicitado, entonces pido exclusivamente que me digas que ambos documentos presentan la misma información. NO TE EXPLAYES MÁS DE LO NECESARIO. 
         Previamente a responder, piensa dos veces si la respuesta que estás dando a la consulta es la correcta. 
+        
         
         
 
@@ -229,8 +243,6 @@ def generate_prompt_for_retinfo(section,retrieved_info_1, retrieved_info_2 ,quer
         {section}
         </Seccion>
         
-        
-
         
         """
 
