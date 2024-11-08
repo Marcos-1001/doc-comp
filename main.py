@@ -106,7 +106,7 @@ def query_function(bedrock : boto3.client,
     
     response = is_comparison(bedrock, query)
     query  =  improve_query(bedrock,query)
-
+    print(query)
     #print(response)
     #exit()
 

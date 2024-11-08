@@ -2,8 +2,6 @@ import boto3
 import os
 import json
 import numpy as np
-from dotenv import load_dotenv
-from sklearn.metrics.pairwise import cosine_similarity
 import DB.db_connection as db
 from tqdm import tqdm
 from ai_call import embed_call, claude_call, generate_prompt_compare_or_info
@@ -13,10 +11,7 @@ from sqlalchemy import and_
 
 
 """ ----------------- CREDENTIALS -----------------""" 
-load_dotenv()
-aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
-aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
-aws_session_token = os.getenv('AWS_SESSION_TOKEN')
+
 """ ------------------------------------------------ """ 
 
 

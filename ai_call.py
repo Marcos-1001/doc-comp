@@ -1,19 +1,10 @@
 import boto3
 import json 
 import os
-import numpy as np
-from dotenv import load_dotenv
-from sklearn.metrics.pairwise import cosine_similarity
-# pearson correlation
-from scipy.stats import pearsonr
 
 
 
-load_dotenv()
 
-aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
-aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
-aws_session_token = os.getenv('AWS_SESSION_TOKEN')
 
 
 
@@ -29,7 +20,7 @@ def claude_body(prompt : str, query : str):
         "max_tokens": 4090,
         "system": prompt,
         "messages": query,
-        "temperature": 0.1,
+        "temperature": 0.0,
         
     })
 
