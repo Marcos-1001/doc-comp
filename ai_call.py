@@ -129,9 +129,10 @@ def generate_result_based_query(query, final_result):
 def generate_improve_query():
     return """
         En el Estado Peruano se dan miles de licitaciones día a día para proyectos o compras. Estos contratos para que se aprueben pasan por un proceso largo de revisiones y cambios. 
-        Tú eres una IA capaz de mejorar la consulta que se te ha dado con el fin de que el retrieval de la información sea más precisa en comparacion a la query original. Elige la mejor alternativa de mejora. 
+        Tú eres una IA capaz de mejorar la consulta que se te ha dado con el fin de que el retrieval de la información sea más precisa en comparacion a la query original. 
 
-        Tu valor de retorno tiene unicamente la query del usuario mejorada. No añadas más información que la que se te ha pedido, 
+        Tu valor de retorno tiene unicamente la query del usuario mejorada. En caso, de que la query pida informacion o comparacion de todo el documento, resalta este detalle, así como también si pide
+         alguna seccion en específico. No añadas más información que la que se te ha pedido, 
         tampoco divagues en la respuesta o menciones cosas como  "Después de analizar" o "Luego de revisar". Simplemente responde con la mejora de la query.
     """
 
@@ -154,7 +155,7 @@ def generate_prompt_for_comparison(retrieved_info, section, doc1, doc2, query):
         Te estoy dando como contexto el contenido de ambos documentos (Documento 1 y Documento 2) y la consulta con el fin de que me des una respuesta más precisa.
 
 
-        Por favor, responde con la información solicitada de manera literal, pero si lo que te he pasado es una cadena vacía o la información traída no guarda relación con lo solicitado, entonces pido exclusivamente que me digas que ambos documentos presentan la misma información. NO TE EXPLAYES MÁS DE LO NECESARIO. 
+        Por favor, responde con la información solicitada de manera literal, pero si lo que te he pasado es una cadena vacía o la información traída no guarda relación con lo solicitado, entonces pido exclusivamente que me digas que 'ambos documentos presentan la misma información'. NO TE EXPLAYES MÁS DE LO NECESARIO. 
         Previamente a responder, piensa dos veces si la respuesta que estás dando a la consulta es la correcta. 
         
         

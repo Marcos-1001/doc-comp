@@ -98,7 +98,7 @@ def call_claude_async(bedrock: boto3.client,
 
 def query_function(bedrock : boto3.client, 
                    query : str, 
-                   top_k : int = 4,
+                   top_k : int = 10,
                    user : str = "user" ) -> str:
     """
     This function retrieves the top_k most similar chunks to the query based on the cosine similarity of the embeddings
