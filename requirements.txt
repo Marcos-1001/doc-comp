@@ -27,7 +27,7 @@ pandas==2.2.3
 pgvector==0.3.6
 pillow==11.0.0
 protobuf==5.28.3
-psycopg2==2.9.10
+psycopg2-binary==2.9.10
 pyarrow==18.0.0
 pydeck==0.9.1
 PyMuPDF==1.24.13
@@ -42,6 +42,7 @@ s3transfer==0.10.3
 six==1.16.0
 smmap==5.0.1
 SQLAlchemy==2.0.36
+streamlit==1.40.0
 tenacity==9.0.0
 toml==0.10.2
 tornado==6.4.1
